@@ -35,9 +35,9 @@ const cart = [
 
 //CODE HERE
 
-const summedPrice = cart.reduce((acc, curr) => acc + curr )
+const summedPrice = cart.reduce((acc, curr) => acc + curr.price, 0 )
 
-console.log(summedPrice(cart))
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -56,8 +56,14 @@ console.log(summedPrice(cart))
 
 //CODE HERE
 
-let calcFinalPrice
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    const totalBeforeCoupon = cartTotal * (1 + tax)
+    const finalPrice = totalBeforeCoupon - couponValue
 
+    return finalPrice
+}
+
+console.log(calcFinalPrice(40, 5, .06))
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
@@ -88,4 +94,11 @@ let calcFinalPrice
     guidelines.
 */
 
-//CODE HERE
+//
+const firstCustomer = {
+    firstName: 'Brady',
+    lastName: 'Alva',
+    address: '123 mainstreet',
+    city: 'Bountiful',
+    phoneNumber: 4351233245
+}

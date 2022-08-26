@@ -22,12 +22,12 @@
 */
 
 //CODE HERE
-let username = 'carl'
+
 
 let greetUser = username => {
     return `Welcome back ${username}`
 }
-// console.log(greetUser(username))
+console.log(greetUser('Brady'))
 
 
 //////////////////PROBLEM 2////////////////////???
@@ -60,7 +60,7 @@ const canWeDeliver = zipCode => {
         } else return "Sorry, we can't deliver to you."
     }
 }
-// console.log(canWeDeliver(85205))
+console.log(canWeDeliver(8520))
 
 /* 
     Problem 2 Continued
@@ -81,11 +81,11 @@ const canWeDeliver = zipCode => {
 
 // CODE HERE
 function canWeDeliverTwo(zipCode){
-    if (deliveryAreaZipCodes.includes(85205, 85204, 85203, 85213, 85206)){
+    if (deliveryAreaZipCodes.includes(zipCode)){
         return 'We deliver here'
     } else 'We do not deliver here'
 }
-// console.log(canWeDeliver(85205))
+console.log(canWeDeliver(85205))
 //////////////////PROBLEM 3////////////////////LOST IN SAUCE
 /* 
     Below is an array of objects that have some
@@ -122,6 +122,9 @@ const deals = [
 //CODE HERE
 
 
+deals[0].title = deals[0].title.replace('15%', '10%')
+
+console.log(deals[0].title)
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -136,3 +139,7 @@ const deals = [
 */
 
 //CODE HERE
+console.log(deals[1].desc)
+
+deals[1].desc = deals[1].desc.trim().replace('March', 'April')
+console.log(deals[1].desc)
