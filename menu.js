@@ -31,7 +31,14 @@
 */
 
 //CODE HERE
-
+let pizza = {
+    name:'Pepperoni',
+    price: 12,
+    category: 'Entree',
+    popularity: 10,
+    rating: 11,
+    tags: ['yum', 'hot', 'ready'],
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +50,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +60,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -63,8 +70,8 @@
 */
 
 //CODE HERE
-
-
+let price = pizza.price
+console.log(price)
 /*
     Fourth, and last, destructure the category
     property.
@@ -73,8 +80,8 @@
 */
 
 //CODE HERE
-
-
+let category = pizza.category
+console.log(category)
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
@@ -88,7 +95,52 @@
 */
 
 //CODE HERE
+let foodArr =
+[ {
+    name:'Pineapple',
+    price: 13,
+    category: 'Entree',
+    popularity: 10,
+    rating: 11,
+    tags: ['saucey', 'ew', 'nasty'],
+},
 
+{
+    name:'Cheese',
+    price: 14,
+    category: 'Entree',
+    popularity: 9,
+    rating: 11,
+    tags: ['slow', 'long',],
+},
+
+{
+    name:'4 Cheese',
+    price: 15,
+    category: 'Entree',
+    popularity: 8,
+    rating: 11,
+    tags: ['cheese', 'big',],
+},
+
+{
+    name:'Alfredo',
+    price: 16,
+    category: 'Entree',
+    popularity: 7,
+    rating: 11,
+    tags: ['yummer', 'moist',],
+},
+
+{
+    name:'Buffalo',
+    price: 17,
+    category: 'Entree',
+    popularity: 6,
+    rating: 11,
+    tags: ['wet', 'spicey',],
+}
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -105,8 +157,9 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+const filteredFood = foodArr.filter(callback) {
+    
+}
 
 
 //////////////////PROBLEM 5////////////////////

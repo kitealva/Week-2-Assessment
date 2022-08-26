@@ -22,12 +22,15 @@
 */
 
 //CODE HERE
+let username = 'carl'
 
-let greetUser =
+let greetUser = username => {
+    return `Welcome back ${username}`
+}
+// console.log(greetUser(username))
 
 
-
-//////////////////PROBLEM 2////////////////////
+//////////////////PROBLEM 2////////////////////???
 /* 
     Below is an array of zip codes that are in
     the restaurant's delivery zone. 
@@ -51,9 +54,13 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 const canWeDeliver = zipCode => {
-    for (let i = 0; i <deliveryAreaZipCodes)
+    for (let i = 0; i <deliveryAreaZipCodes.length; i++) {
+        if(zipCode === deliveryAreaZipCodes[i]) {
+            return "You're in our delivery zone!"
+        } else return "Sorry, we can't deliver to you."
+    }
 }
-
+// console.log(canWeDeliver(85205))
 
 /* 
     Problem 2 Continued
@@ -73,9 +80,13 @@ const canWeDeliver = zipCode => {
 */
 
 // CODE HERE
-
-
-//////////////////PROBLEM 3////////////////////
+function canWeDeliverTwo(zipCode){
+    if (deliveryAreaZipCodes.includes(85205, 85204, 85203, 85213, 85206)){
+        return 'We deliver here'
+    } else 'We do not deliver here'
+}
+// console.log(canWeDeliver(85205))
+//////////////////PROBLEM 3////////////////////LOST IN SAUCE
 /* 
     Below is an array of objects that have some
     information about a couple of deals that are
@@ -109,7 +120,6 @@ const deals = [
 */
 
 //CODE HERE
-
 
 
 /*
